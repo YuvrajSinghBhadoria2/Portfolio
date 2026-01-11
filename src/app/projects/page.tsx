@@ -1,5 +1,3 @@
-'use client';
-
 import AllProjects from '@/components/projects/AllProjects';
 import { Metadata } from 'next';
 import { motion } from 'framer-motion';
