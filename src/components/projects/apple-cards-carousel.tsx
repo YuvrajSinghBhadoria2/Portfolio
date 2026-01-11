@@ -267,9 +267,26 @@ export const Card = ({
           </div>
         )}
       </AnimatePresence>
-      <motion.button
-        layoutId={layout ? `card-${card.title}` : undefined}
-        onClick={handleOpen}
+      <motion.a
+        href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          // Extract GitHub link from card content and redirect
+          let githubLink = '';
+          if (card.title.includes('Enterprise Document')) {
+            githubLink = 'https://github.com/YuvrajSinghBhadoria2/Enterprise-RAG-System';
+          } else if (card.title.includes('AI Doctor')) {
+            githubLink = 'https://github.com/YuvrajSinghBhadoria2/AI-doctor_chatbot-voice-agent-';
+          } else if (card.title.includes('LLM Fine-Tuning')) {
+            githubLink = 'https://github.com/YuvrajSinghBhadoria2/Fine-tuned-with_DPO';
+          }
+          if (githubLink) {
+            window.open(githubLink, '_blank');
+          } else {
+            // If no GitHub link matched, open the project details modal
+            handleOpen();
+          }
+        }}
         className="relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 dark:bg-neutral-900"
       >
         <div className="absolute inset-x-0 top-0 z-30 h-full cursor-pointer bg-gradient-to-b from-black hover:scale-110 via-transparent to-transparent" />
@@ -294,7 +311,7 @@ export const Card = ({
           fill
           className="absolute inset-0 z-10 object-cover"
         />
-      </motion.button>
+      </motion.a>
     </>
   );
 };

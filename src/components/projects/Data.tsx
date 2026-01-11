@@ -7,211 +7,81 @@ import { Separator } from '@/components/ui/separator';
 // --- PROJECT DATABASE ---
 // This array holds the detailed information for each project.
 const PROJECT_CONTENT = [
-    {
-    // --- NEW AI-NATIVE PORTFOLIO PROJECT ---
-    title: 'AI-Native Portfolio',
-    description:
-      'Static portfolios are boring. Mine talks back. The world’s first AI-native portfolio where an AI avatar answers your questions about me in real time.',
-    techStack: [
-      'Next.js',
-      'React',
-      'TypeScript',
-      'Tailwind CSS',
-      'Framer Motion',
-      'Mistral AI API',
-      'OpenAI API',
-      'Node.js',
-      'Vercel',
-    ],
-    date: 'August 2025', // <-- TODO: Update with your project date
-    links: [
-      {
-        name: 'Live Demo - You Are Here!',
-        url: 'https://www.yuvraj.bio',
-      },
-      {
-        name: 'GitHub Repository',
-        url: 'https://github.com/yuvraj0412s/ai-native-portfolio',
-      },
-    ],
-    images: [
-      { src: '/projects/ai-portfolio-chat.png', alt: 'The AI Native Portfolio chat interface in action' },
-      { src: '/projects/ai-portfolio-home.png', alt: 'Homepage of the AI Native Portfolio' },
-    ],
-  },
   {
-    title: 'AgroAI',
+    title: 'Enterprise Document Q&A System with Multi-Agent Architecture',
     description:
-      'Snap a leaf, get a diagnosis! This AI-powered web app detects 38 plant diseases with 96% accuracy and gives instant tips on symptoms, causes, and treatment—making plant care smarter and easier for farmers and gardeners.',
+      'Problem: Most RAG systems struggle with precision (irrelevant results) and hallucinations (ungrounded responses). Solution: Hybrid Retrieval: Combined FAISS (semantic) + BM25 (lexical) to improve recall. Reranking: Used cross-encoders (e.g., bge-reranker-large) to boost precision to 98%+ on WikiQA/GovReport. Safety Guardrails: Confidence gating: Reject responses below a threshold (e.g., score < 0.7). Groundedness validation: Automatically verify responses against source documents. Outcome: Reduced irrelevant responses by 40% and achieved near-zero hallucinations.',
     techStack: [
       'Python',
-      'Flask',
-      'TensorFlow',
-      'Keras',
-      'Deep Learning',
-      'Computer Vision',
-      'EfficientNetB4',
-      'HTML5',
-      'CSS3',
-      'JavaScript',
+      'FastAPI',
+      'Docker',
+      'FAISS',
+      'BM25',
+      'Groq (Llama-3)',
+      'Cross encoder',
+      'Sentence-Transformers',
     ],
-    date: 'May 2024',
+    date: 'Present',
     links: [
       {
-        name: 'Live Demo',
-        url: 'https://github.com/yuvraj0412s/AgroAI', // <-- TODO: Replace with your live deployment URL.... will do later
-      },
-      {
         name: 'GitHub Repository',
-        url: 'https://github.com/yuvraj0412s/AgroAI', // <-- TODO: Replace with your actual repo URL if different
-      },
-    ],
-    // All seven of screenshots are showcased here
-    images: [
-      {
-        src: '/projects/agroai-home.png',
-        alt: 'AgroAI Homepage - AI-Powered Plant Health Companion',
+        url: 'https://github.com/YuvrajSinghBhadoria2/Enterprise-RAG-System',
       },
       {
-        src: '/projects/agroai-result.png',
-        alt: 'AgroAI Analysis Result Page with Prediction and Confidence Score',
-      },
-      {
-        src: '/projects/agroai-guide.png',
-        alt: 'AgroAI Crop-wise Disease Guides Page',
-      },
-      {
-        src: '/projects/agroai-guide-detail.png',
-        alt: 'AgroAI Tomato Disease Guide Detail Page with Accordion',
-      },
-      {
-        src: '/projects/agroai-how-it-works.png',
-        alt: 'AgroAI How It Works Page with a 3-step flowchart',
-      },
-      {
-        src: '/projects/agroai-resources.png',
-        alt: 'AgroAI Farming & Plant Care Resources Page',
-      },
-      {
-        src: '/projects/agroai-about.png',
-        alt: 'AgroAI About and Contact Page',
-      },
-    ],
-  },
-  {
-    // --- NEW DJANGO E-COMMERCE PROJECT ---
-    title: 'Holohype',
-    description:
-      'HoloHype is a quirky full-stack e-commerce hub with a clever AI that knows what you want, a lightning-fast cart, secure logins, and a super-handy admin panel to keep all the goodies in check.',
-    techStack: [
-      'Django',
-      'Python',
-      'Cython',
-      'Content-Based Filtering',
-      'NumPy',
-      'Pandas',
-      'JavaScript',
-      'AJAX',
-      'HTML5',
-      'CSS3',
-    ],
-    date: 'June 2025', // <-- TODO: Update with your project date
-    links: [
-      {
-        name: 'Live Demo',
-        url: 'https://github.com/yuvraj0412s/holohype', // <-- TODO: Replace with your live deployment URL
-      },
-      {
-        name: 'GitHub Repository',
-        url: 'https://github.com/yuvraj0412s/holohype', // <-- TODO: Update with your actual repo URL
+        name: 'Demo',
+        url: 'https://huggingface.co/spaces/yuvis/Enterprise-RAG-System',
       },
     ],
     images: [
-      { src: '/projects/holohype-home.png', alt: 'E-commerce platform homepage with product listings' },
-      { src: '/projects/holohype-login.png', alt: 'Modern user login and authentication page' },
-      { src: '/projects/holohype-product.png', alt: 'Product detail page with AI-powered recommendations' },
-      { src: '/projects/holohype-cart.png', alt: 'Dynamic shopping cart with real-time updates' },
+      { src: '/projects/enterprise-rag-preview.png', alt: 'Enterprise RAG System interface' },
     ],
   },
   {
-    // --- NEW REACT PORTFOLIO PROJECT ---
-    title: 'Old Portfolio',
+    title: 'AI Doctor Chatbot Voice Agent',
     description:
-      'A stellar dev portfolio with shooting stars on a dark space background! Built with React, Vite & Tailwind, it features sleek animations, dark/light mode, a filterable skills grid, dynamic project showcase, and a working contact form. A cosmic way to show off my frontend skills!',
-    techStack: [
-      'React',
-      'Vite',
-      'Tailwind CSS',
-      'Radix UI',
-      'Lucide Icons',
-      'TypeScript',
-      'Responsive Design',
-    ],
-    date: '2024', // <-- TODO: Update with your project date
-    links: [
-      {
-        name: 'Live Demo',
-        url: 'https://yuvraj-portfolio-phi.vercel.app', // <-- TODO: Update if this is the correct link
-      },
-      {
-        name: 'GitHub Repository',
-        url: 'https://github.com/yuvraj0412s/react-tailwind-portfolio', // <-- TODO: Update with your actual repo URL
-      },
-    ],
-    images: [
-      { src: '/projects/old-portfolio-home.png', alt: 'Homepage of the React portfolio with hero section' },
-      { src: '/projects/old-portfolio-about.png', alt: 'About Me section with description' },
-      { src: '/projects/old-portfolio-skills.png', alt: 'Filterable skills grid with progress bars' },
-      { src: '/projects/old-portfolio-projects.png', alt: 'Project showcase section with cards' },
-      { src: '/projects/old-portfolio-contact.png', alt: 'Contact page with form to reach out directly' },
-    ],
-  },
-  {
-    // --- YOUTUBE CLONE PROJECT (FROM YOUR README) ---
-    title: 'YouTube Clone',
-    description:
-      'A pixel-perfect, responsive clone of the YouTube user interface, built from scratch using modern HTML5 and CSS3. The project showcases a deep understanding of frontend fundamentals, featuring a dynamic video grid built with CSS Grid, a fully responsive sidebar and header created with Flexbox, and a mobile-first design approach that ensures a seamless experience on any device.',
-    techStack: [
-      'HTML5',
-      'CSS3',
-      'Flexbox',
-      'CSS Grid',
-      'Responsive Design',
-      'Mobile-First',
-    ],
-    date: '2023', // <-- TODO: Update with your project date
-    links: [
-      {
-        name: 'Live Demo',
-        url: 'https://github.com/yuvraj0412s/YouTube_clone', // <-- TODO: Replace with your live deployment URL
-      },
-      {
-        name: 'GitHub Repository',
-        url: 'https://github.com/yuvraj0412s/YouTube_clone', // <-- TODO: Update if your repo name is different
-      },
-    ],
-    images: [
-      { src: '/projects/yt-clone-home.png', alt: 'Screenshot of the YouTube Clone project homepage' },
-      // Add more screenshots here if you have them!
-    ],
-  },
-  {
-    title: 'Latency-Aware Task Partitioning',
-    description:
-      'Proposed a framework for optimal task partitioning and user association across edge–fog–cloud layers, implementing metaheuristic algorithms (ACO, GA, PSO) to solve MILP-based formulations for both dependent and independent subtasks.',
+      'Problem: Healthcare chatbots often lack contextual understanding and multi-turn conversation capabilities. Solution: Built a voice-enabled LLM agent using Whisper (speech-to-text) + Llama-3 (reasoning) + TTS (text-to-speech). Integrated medical knowledge graphs (e.g., UMLS) for accurate symptom analysis.',
     techStack: [
       'Python',
-      'Metaheuristic Algorithms (ACO, GA, PSO)',
-      'MILP',
-      'Edge Computing',
+      'FastAPI',
+      'Hugging Face Transformers',
+      'LangChain',
+      'Whisper',
+      'Llama-3',
+      'TTS',
     ],
-    date: 'Ongoing',
-    links: [],
-    images: [
+    date: 'Present',
+    links: [
       {
-        src: '/projects/RP_preview.png', // Placeholder image
-        alt: 'Latency-Aware Task Partitioning project image 1',
+        name: 'GitHub Repository',
+        url: 'https://github.com/YuvrajSinghBhadoria2/AI-doctor_chatbot-voice-agent-',
       },
+    ],
+    images: [
+      { src: '/projects/ai doctor agent.png', alt: 'AI Doctor Chatbot interface' },
+    ],
+  },
+  {
+    title: 'LLM Fine-Tuning with Direct Preference Optimization (DPO)',
+    description:
+      'Problem: Traditional fine-tuning (e.g., SFT) doesn\'t align LLMs with human preferences (e.g., helpfulness vs. harm). Solution: Implemented Direct Preference Optimization (DPO) to train Pythia-6.9B on the Anthropic-HH dataset. Used FSDP + mixed precision (bfloat16) to train efficiently on multi-GPU setups. Hyperparameter tuning: Optimized beta (0.1–0.5) to balance alignment and performance. Outcome: Improved model alignment by 30% compared to SFT.',
+    techStack: [
+      'Python',
+      'PyTorch',
+      'HuggingFace Transformers',
+      'FSDP',
+      'Anthropic-HH Dataset',
+      'Weights & Biases',
+      'Mixed Precision Training',
+    ],
+    date: 'Present',
+    links: [
+      {
+        name: 'GitHub Repository',
+        url: 'https://github.com/YuvrajSinghBhadoria2/Fine-tuned-with_DPO',
+      },
+    ],
+    images: [
+      { src: '/projects/llm-finetuning-preview.png', alt: 'LLM Fine-tuning project interface' },
     ],
   },
 ];
@@ -317,53 +187,28 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
 // --- MAIN DATA EXPORT ---
 // This is the data used by your main portfolio page.
 export const data = [
-   {
-    category: 'AI & Next.js',
-    title: 'AI-Native Portfolio',
-    src: '/projects/ai-portfolio-preview.png', // <-- TODO: Make sure you have a preview image at this path
+  {
+    category: 'AI & RAG',
+    title: 'Enterprise Document Q&A System with Multi-Agent Architecture',
+    src: '/projects/enterprise-rag-preview.png',
     content: (
-      // The `title` here MUST match the full title in PROJECT_CONTENT
-      <ProjectContent project={{ title: 'AI-Native Portfolio' }} />
+      <ProjectContent project={{ title: 'Enterprise Document Q&A System with Multi-Agent Architecture' }} />
     ),
   },
   {
-    category: 'Full-Stack AI',
-    title: 'AgroAI',
-    src: '/projects/agroai-preview.png', // Use the main homepage screenshot for the preview
+    category: 'AI & Healthcare',
+    title: 'AI Doctor Chatbot Voice Agent',
+    src: '/projects/ai-doctor-preview.png',
     content: (
-      <ProjectContent project={{ title: 'AgroAI' }} />
+      <ProjectContent project={{ title: 'AI Doctor Chatbot Voice Agent' }} />
     ),
   },
   {
-    category: 'Full-Stack & AI',
-    title: 'Holohype',
-    src: '/projects/holohype-preview.png', // <-- TODO: Make sure you have a preview image at this path
+    category: 'LLM & Fine-tuning',
+    title: 'LLM Fine-Tuning with Direct Preference Optimization (DPO)',
+    src: '/projects/llm-finetuning-preview.png',
     content: (
-      <ProjectContent project={{ title: 'Holohype' }} />
-    ),
-  },
-  {
-    category: 'Frontend Development',
-    title: 'Old Portfolio',
-    src: '/projects/old-portfolio-preview.png', // <-- TODO: Make sure you have a preview image at this path
-    content: (
-      <ProjectContent project={{ title: 'Old Portfolio' }} />
-    ),
-  },
-  {
-    category: 'Frontend Development',
-    title: 'YouTube Clone',
-    src: '/projects/yt-clone-preview.png', // <-- TODO: Make sure you have a preview image at this path
-    content: (
-      <ProjectContent project={{ title: 'YouTube Clone' }} />
-    ),
-  },
-  {
-    category: 'Edge Computing',
-    title: 'Latency-Aware Task Partitioning',
-    src: '/projects/RP_preview.png', // Placeholder image
-    content: (
-      <ProjectContent project={{ title: 'Latency-Aware Task Partitioning' }} />
+      <ProjectContent project={{ title: 'LLM Fine-Tuning with Direct Preference Optimization (DPO)' }} />
     ),
   },
 ];

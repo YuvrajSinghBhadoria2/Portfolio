@@ -47,11 +47,12 @@ export async function POST(req: Request) {
     };
 
     const result = streamText({
-      model: mistral('mistral-large-latest'),
+      model: mistral('mistral-small-latest'), // Using smaller, faster model for reduced latency
       messages,
       toolCallStreaming: true,
       tools,
       maxSteps: 2,
+      temperature: 0.7, // Optimal balance for response quality and speed
     });
 
     return result.toDataStreamResponse({

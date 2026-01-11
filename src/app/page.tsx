@@ -25,6 +25,7 @@ const questions = {
   Skills: 'What are your skills? Give me a list of your soft and hard skills.',
   Fun: 'What’s the craziest thing you’ve ever done? What are your hobbies?',
   Contact: 'How can I contact you?',
+  Resume: 'Can I see your resume?',
 } as const;
 
 const questionConfig = [
@@ -33,6 +34,7 @@ const questionConfig = [
   { key: 'Skills', color: '#856ED9', icon: Layers },
   { key: 'Fun', color: '#B95F9D', icon: PartyPopper },
   { key: 'Contact', color: '#C19433', icon: UserRoundSearch },
+  { key: 'Resume', color: '#D97706', icon: UserRoundSearch },
 ] as const;
 
 /* ---------- component ---------- */
@@ -101,7 +103,7 @@ export default function Home() {
           animationDuration={1.5}
           label="Star"
           size={'sm'}
-          repoUrl="https://github.com/yuvraj0412s/ai-native_portfolio.git"
+          repoUrl="https://github.com/YuvrajSinghBhadoria2/portfolio.git"
         />
       </div>
 
@@ -131,7 +133,7 @@ export default function Home() {
         </div>
 
         <h2 className="text-secondary-foreground mt-1 text-xl font-semibold md:text-2xl">
-          Hey, I'm Yuvraj Singh 👋
+          Hey, I'm Yuvraj Singh Bhadoria 👋
         </h2>
         <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
           AI Portfolio
@@ -202,6 +204,37 @@ export default function Home() {
           ))}
         </div>
       </motion.div>
+      
+      {/* Resume section */}
+      <motion.div
+        variants={bottomElementVariants}
+        initial="hidden"
+        animate="visible"
+        className="z-10 mt-12 w-full max-w-4xl"
+      >
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl p-6 md:p-8 border border-border">
+          <h3 className="text-xl font-semibold mb-4 text-center">My Resume</h3>
+          <p className="text-center text-muted-foreground mb-6">
+            Download my resume to learn more about my experience and qualifications
+          </p>
+          
+          <div className="flex justify-center">
+            <a 
+              href="/Resume_Yuvraj_Singh_AI.pdf" 
+              download="Resume_Yuvraj_Singh_AI.pdf"
+              className="inline-flex items-center gap-2 bg-[#0171E3] hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-full transition-colors"
+            >
+              <span>Download Resume</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </motion.div>
+      
       <FluidCursor />
     </div>
   );

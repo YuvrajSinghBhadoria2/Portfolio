@@ -7,12 +7,22 @@ import React from 'react';
 export function Presentation() {
   // Personal information
   const profile = {
-    name: 'Yuvraj Singh',
-    age: '22 years old',
+    name: 'Yuvraj Singh Bhadoria',
+    age: '24 years old',
     location: 'Gurugram, India',
     // Add a newline character after the emoji
     description:
-      "Hey 👋\nI'm Yuvraj also known as Yuvi, building AI-powered experiences that talk back, think with you, and make static tech feel alive.",
+      `Hey 👋
+I'm Yuvraj , building AI-powered experiences that talk back, think with you, and make static tech feel alive.
+
+What I'm Working On Right Now:
+
+Production-Grade AI Deployments:
+Deploying scalable AI systems on cloud platforms (AWS, Azure) with low-latency inference and cost optimization.
+Integrating observability tools (e.g., Prometheus, Grafana) to monitor model performance in real-time.
+
+Open-Source Contributions:
+Contributing to LangChain, Hugging Face Transformers, and RAG-related libraries to improve their functionality and usability.`,
     src: '/profile-yuvi-03.jpeg',
     fallbackSrc:
       'https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3',

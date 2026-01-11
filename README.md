@@ -14,14 +14,14 @@
 ### **Badges**
 
 <p align="center">
-  <img src="https://img.shields.io/github/repo-size/yuvraj0412s/Yuvi_portfolio?style=for-the-badge" alt="Repo Size">
-  <img src="https://img.shields.io/github/license/yuvraj0412s/Yuvi_portfolio?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/github/repo-size/YuvrajSinghBhadoria2/portfolio?style=for-the-badge" alt="Repo Size">
+  <img src="https://img.shields.io/github/license/YuvrajSinghBhadoria2/portfolio?style=for-the-badge" alt="License">
   <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"></a>
   <a href="https://vercel.com/"><img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Deployment"></a>
   <a href="https://openai.com/"><img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI API"></a>
   <a href="https://mistral.ai/"><img src="https://img.shields.io/badge/Mistral-FF7E00?style=for-the-badge&logo=mistralai&logoColor=white" alt="Mistral API"></a>
-  <a href="https://github.com/yuvraj0412s/Yuvi_portfolio/stargazers"><img src="https://img.shields.io/github/stars/yuvraj0412s/Yuvi_portfolio?style=for-the-badge&color=ffd700" alt="Repo Stars"></a>
-  <a href="https://github.com/yuvraj0412s/Yuvi_portfolio/graphs/contributors"><img src="https://img.shields.io/github/contributors/yuvraj0412s/Yuvi_portfolio?style=for-the-badge&color=ff69b4" alt="Contributors"></a>
+  <a href="https://github.com/YuvrajSinghBhadoria2/portfolio/stargazers"><img src="https://img.shields.io/github/stars/YuvrajSinghBhadoria2/portfolio?style=for-the-badge&color=ffd700" alt="Repo Stars"></a>
+  <a href="https://github.com/YuvrajSinghBhadoria2/portfolio/graphs/contributors"><img src="https://img.shields.io/github/contributors/YuvrajSinghBhadoria2/portfolio?style=for-the-badge&color=ff69b4" alt="Contributors"></a>
 </p>
 
 ---
@@ -72,8 +72,8 @@ Want to get this project running on your local machine? Follow these simple step
 
 1.  **Clone the repository:**
     ```sh
-    git clone https://github.com/yuvraj0412s/Yuvi_portfolio.git
-    cd Yuvi_portfolio
+    git clone https://github.com/YuvrajSinghBhadoria2/portfolio.git
+    cd portfolio
     ```
 
 2.  **Install dependencies:**
@@ -131,13 +131,13 @@ This project is open-sourced under the **MIT License**. See the [LICENSE](LICENS
 
 ### **Contact & Links** 🔗
 
-**Yuvraj Singh** - Let's connect!
+**Yuvraj Singh Bhadoria** - Let's connect!
 
 <div align="center">
 
 [![Portfolio](https://img.shields.io/badge/Live_Demo-yuvraj.bio-2ea44f?style=for-the-badge&logo=vercel)](https://www.yuvraj.bio)
 &nbsp;
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yuvraj-singh-77601827a/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yuvraj-singh-bhadoria/)
 
 </div>
 
@@ -146,3 +146,4 @@ This project is open-sourced under the **MIT License**. See the [LICENSE](LICENS
 ### **Tags**
 
 `#AIPortfolio` `#NextJS` `#React` `#Portfolio` `#Vercel` `#OpenAI` `#MistralAI` `#DeveloperPortfolio` `#WebDevelopment` `#InteractiveUI`
+# Portfolio

@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 
 const InternshipCard = () => {
   const openMail = () => {
-    window.open('mailto:yuvraj0412s@gmail.com', '_blank');
+    window.open('mailto:yuvrajsinghbhado2030@gmail.com', '_blank');
   };
   const router = useRouter();
 
@@ -30,7 +30,7 @@ const InternshipCard = () => {
           </div>
           <div>
             <h2 className="text-foreground text-2xl font-semibold">
-              Yuvraj Singh
+              Yuvraj Singh Bhadoria
             </h2>
             <p className="text-muted-foreground text-sm">
               Internship Application
