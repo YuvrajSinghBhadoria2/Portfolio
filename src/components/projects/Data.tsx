@@ -6,7 +6,7 @@ import { Separator } from '@/components/ui/separator';
 
 // --- PROJECT DATABASE ---
 // This array holds the detailed information for each project.
-const PROJECT_CONTENT = [
+export const PROJECT_CONTENT = [
   {
     title: 'Enterprise Document Q&A System with Multi-Agent Architecture',
     description:
@@ -198,7 +198,7 @@ export const data = [
   {
     category: 'AI & Healthcare',
     title: 'AI Doctor Chatbot Voice Agent',
-    src: '/projects/ai-doctor-preview.png',
+    src: '/projects/ai doctor agent.png',
     content: (
       <ProjectContent project={{ title: 'AI Doctor Chatbot Voice Agent' }} />
     ),

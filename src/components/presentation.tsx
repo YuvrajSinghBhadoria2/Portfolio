@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
 import React from 'react';
 
@@ -29,7 +29,7 @@ Contributing to LangChain, Hugging Face Transformers, and RAG-related libraries 
   };
 
   // Animation variants for text elements
-  const textVariants = {
+  const textVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
@@ -39,7 +39,7 @@ Contributing to LangChain, Hugging Face Transformers, and RAG-related libraries 
   };
 
   // Animation for the entire paragraph rather than word-by-word
-  const paragraphAnimation = {
+  const paragraphAnimation: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,

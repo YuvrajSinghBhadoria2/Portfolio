@@ -1,6 +1,6 @@
 'use client';
 import { useChat } from '@ai-sdk/react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion, MotionProps } from 'framer-motion';
 import dynamic from 'next/dynamic';
 import { useSearchParams } from 'next/navigation';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
@@ -107,7 +107,7 @@ const Avatar = dynamic<AvatarProps>(
   { ssr: false }
 );
 
-const MOTION_CONFIG = {
+const MOTION_CONFIG: MotionProps = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
   exit: { opacity: 0, y: 20 },
@@ -374,22 +374,22 @@ const Chat = () => {
           </AnimatePresence>
         </div>
 
-{/* Fixed Bottom Bar */}
-<div
-  className="sticky bottom-0 px-2 pt-3 md:px-0 md:pb-4 transition-colors duration-300 bg-white dark:bg-black"
->
-  <div className="relative flex flex-col items-center gap-3">
-    <HelperBoost submitQuery={submitQuery} setInput={setInput} />
-    <ChatBottombar
-      input={input}
-      handleInputChange={handleInputChange}
-      handleSubmit={onSubmit}
-      isLoading={isLoading}
-      stop={handleStop}
-      isToolInProgress={isToolInProgress}
-    />
-  </div>
-</div>
+        {/* Fixed Bottom Bar */}
+        <div
+          className="sticky bottom-0 px-2 pt-3 md:px-0 md:pb-4 transition-colors duration-300 bg-white dark:bg-black"
+        >
+          <div className="relative flex flex-col items-center gap-3">
+            <HelperBoost submitQuery={submitQuery} setInput={setInput} />
+            <ChatBottombar
+              input={input}
+              handleInputChange={handleInputChange}
+              handleSubmit={onSubmit}
+              isLoading={isLoading}
+              stop={handleStop}
+              isToolInProgress={isToolInProgress}
+            />
+          </div>
+        </div>
 
         <a
           href="https://linkedin.com/in/yuvraj-singh-77601827a"

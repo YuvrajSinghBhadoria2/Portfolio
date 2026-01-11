@@ -2,7 +2,7 @@
 
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { Code, Cpu, PenTool, Users } from 'lucide-react';
 
 const Skills = () => {
@@ -45,8 +45,8 @@ const Skills = () => {
         'Langgraph',
         'Langsmith',
         'Fine Tune',
-        
-        
+
+
       ],
       color: 'bg-emerald-50 text-emerald-600 border border-emerald-200',
     },
@@ -55,8 +55,8 @@ const Skills = () => {
       icon: <PenTool className="h-5 w-5" />,
       skills: [
         'Git',
-        'GitHub', 
-        'VS Code', 
+        'GitHub',
+        'VS Code',
         'Jupyter Notebook',
         'Docker',
         'Discord',
@@ -79,7 +79,7 @@ const Skills = () => {
   ];
 
   // Animation variants
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -89,16 +89,16 @@ const Skills = () => {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: [0.19, 1, 0.22, 1] },
+      transition: { duration: 0.5, ease: 'easeOut' },
     },
   };
 
-  const badgeVariants = {
+  const badgeVariants: Variants = {
     hidden: { opacity: 0, scale: 0.9 },
     visible: {
       opacity: 1,
